@@ -13,16 +13,10 @@ end
 
 def reduce (array, *start)
   i = 0 
-  if start
-    total = 0
-  else
-    total = start
-  end
-  
-  pp "Total at start: #{total}"
+  total = 0
   
   while i < array.length do
-    total = (yield(array[i], start))
+    total += array[i]
     i += 1 
   end
   
