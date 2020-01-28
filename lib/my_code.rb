@@ -16,7 +16,7 @@ def reduce (array, *start)
   if !start 
     total = 0
   else
-    total = start
+    total = start[0]
   end
   
   while i < array.length do
