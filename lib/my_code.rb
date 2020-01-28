@@ -3,7 +3,7 @@ def map (array)
   return_array = []
   
   while i < array.length do
-    return_array << yield (array[i])
+    return_array << (yield (array[i]))
     i += 1 
   end
   
