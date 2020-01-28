@@ -10,6 +10,6 @@ def map (array)
   return_array
 end
 
-map([1,2,3,9]) do |number|
+map(array) do |number|
   number * -1
 end
