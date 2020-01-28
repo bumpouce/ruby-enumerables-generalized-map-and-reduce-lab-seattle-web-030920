@@ -12,15 +12,16 @@ end
 
 
 def reduce (array, start=nil)
-  i = 0 
   if start
     total = start
+    i = 0
   else
-    total = 0
+    total =array [0]
+    i = 1
   end
   
   while i < array.length do
-    total += array[i]
+    total = (yield(total, array[i]))
     i += 1 
   end
   
