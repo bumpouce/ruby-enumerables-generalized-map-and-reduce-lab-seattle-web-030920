@@ -11,7 +11,7 @@ def map (array)
 end
 
 
-def reduce (array)
+def reduce (array, *start)
   i = 0 
   total = 0 
   
