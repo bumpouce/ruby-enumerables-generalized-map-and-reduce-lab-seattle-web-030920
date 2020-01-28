@@ -22,7 +22,7 @@ def reduce (array, *start)
   pp "Total at start: #{total}"
   
   while i < array.length do
-    total += (yield(array[i]))
+    total = (yield(array[i]))
     i += 1 
   end
   
