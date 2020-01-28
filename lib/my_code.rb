@@ -11,9 +11,13 @@ def map (array)
 end
 
 
-def reduce (array, *start=nil)
+def reduce (array, start=nil)
   i = 0 
-  total = 0
+  if start
+    total = start
+  else
+    total = 0
+  end
   
   while i < array.length do
     total += array[i]
