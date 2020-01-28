@@ -14,6 +14,7 @@ end
 def reduce (array, *start)
   i = 0 
   total = 0 
+  pp "Array: #{array}"
   
   while i < array.length do
     pp "Yields: #{yield(array[i])}"
