@@ -16,7 +16,7 @@ def reduce (array, *start)
   total = 0 
   
   while i < array.length do
-    total += array[i]
+    total += (yield(array[i], *start))
     i += 1 
   end
   
