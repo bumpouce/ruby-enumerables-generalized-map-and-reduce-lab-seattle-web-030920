@@ -16,7 +16,7 @@ def reduce (array, *start)
   total = 0 
   
   while i < array.length do
-    pp "Yields: #{yield(array[i]}"
+    pp "Yields: #{yield(array[i])}"
 #    total += (yield(array[i]))
     i += 1 
   end
